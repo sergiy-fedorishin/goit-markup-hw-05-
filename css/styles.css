@@ -501,6 +501,64 @@ img {
   fill: #f4f4fd;
 }
 
+/* footer form */
+
+.subscribe {
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+.subscribe-text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.subscribe-form-field {
+}
+
+.subscribe-form-input {
+  width: 264px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  outline: transparent;
+padding: 8px 16px;
+ 
+}
+
+.subscribe-form-input::placeholder {
+   color: #fff;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
+.footer-btn {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 24px;
+    border-radius: 4px;
+      background-color: #4D5AE5;
+}
+
+.footer-icon {
+}
+
 /* modal window */
 
 .backdrop {
@@ -665,6 +723,7 @@ img {
   height: 16px;
   border-radius: 2px;
   border: rgba(46, 47, 66, 0.4);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox:checked + .form-agreement-checkbox {
