@@ -810,7 +810,7 @@ width: 16px;
     opacity: 0;
 }
 
-.modal-footer-input:checked + .agreement-span {
+.modal-footer-input:checked+.agreement-span {
   background-color: #404bbf;
   border: none;
   fill: #F4F4FD;
