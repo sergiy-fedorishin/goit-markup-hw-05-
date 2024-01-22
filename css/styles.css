@@ -791,9 +791,7 @@ img {
 }
 
 .agreement-span {
-  position: absolute;
-  top: 0;
-left: 0;  
+ display: inline-flex;
 width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -807,22 +805,18 @@ width: 16px;
     fill: transparent;
 }
 
-.modal-footer-input:checked {
-  border: none;
-  fill: #F4F4FD;
-}
-
 .checkbox-icon {
   fill: #fff;
     opacity: 0;
 }
 
-.modal-footer-input:checked + .form-agreement-span {
+.modal-footer-input:checked + .agreement-span {
   background-color: #404bbf;
-  border-color: transparent;
+  border: none;
+  fill: #F4F4FD;
 }
 
-.modal-footer-input:checked+.form-agreement>.checkbox-icon {
+.modal-footer-input:checked+.agreement-span>.checkbox-icon {
   opacity: 1;
 }
 .checkbox-linc {
