@@ -532,14 +532,14 @@ img {
   border: 1px solid #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   outline: transparent;
-padding: 8px 16px;
-font-size: 12px;
-line-height: 2;
-letter-spacing: 0.04em;
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
 }
 
 .subscribe-form-input::placeholder {
-   color: #ffffff;;
+  color: #ffffff;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
@@ -548,19 +548,19 @@ letter-spacing: 0.04em;
 .footer-btn {
   display: flex;
   color: #fff;
-    justify-content: center;
-    align-items: center;
-    min-width: 165px;
-    height: 40px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    cursor: pointer;
-    border: none;
-    padding: 8px 24px;
-    border-radius: 4px;
-      background-color: #4D5AE5;
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  justify-content: center;
+  align-items: center;
+  min-width: 165px;
+  height: 40px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon {
@@ -569,9 +569,8 @@ letter-spacing: 0.04em;
 
 .footer-btn:hover,
 .footer-btn:focus {
-  background-color: #404BBF;
+  background-color: #404bbf;
 }
-
 
 /* modal window */
 
@@ -605,16 +604,15 @@ letter-spacing: 0.04em;
   min-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn {
-position: absolute;
-top: 24px;
-right: 24px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -725,19 +723,19 @@ right: 24px;
   color: #2e2f4266;
 }
 
-.form-massge:focus {
-  border-color: #4D5AE5;
+.form-massage:focus {
+  border-color: #4d5ae5;
   border: 1px solid #4d5ae5;
 }
 
 /* form checkbox */
 
-.form-agreement {
-   color: #8E8F99;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.7;
-    letter-spacing: 0.04em;
+/* .form-agreement {
+  color: #8E8F99;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
 }
 
 .form-agreement-checkbox {
@@ -753,18 +751,16 @@ right: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox:checked + .form-agreement-checkbox {
+.checkbox:checked+.form-agreement-checkbox {
   background-color: #404bbf;
   border-color: transparent;
 }
 
-.checkbox:checked + .form-agreement-checkbox > .checkbox-icon {
+.checkbox:checked+.form-agreement-checkbox>.checkbox-icon {
   opacity: 1;
 }
 
-.modal-privacy {
- 
-}
+.modal-privacy {}
 
 .checkbox-icon {
   fill: #fff;
@@ -779,4 +775,57 @@ right: 24px;
 .form-btn {
   min-width: 169px;
   min-height: 56px;
+} */
+
+.modal-footer {
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.form-agreement {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-right: 8px;
+}
+
+.agreement-span {
+  position: absolute;
+  top: 0;
+left: 0;  
+width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    fill: transparent;
+}
+
+.modal-footer-input:checked {
+  border: none;
+  fill: #F4F4FD;
+}
+
+.checkbox-icon {
+  fill: #fff;
+    opacity: 0;
+}
+
+.modal-footer-input:checked + .form-agreement-span {
+  background-color: #404bbf;
+  border-color: transparent;
+}
+
+.modal-footer-input:checked+.form-agreement>.checkbox-icon {
+  opacity: 1;
+}
+.checkbox-linc {
+  color: #4d5ae5;
+  text-decoration-line: underline;
 }
